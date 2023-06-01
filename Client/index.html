@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Store Seller Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+    </style>
+</head>
+<body>
+    <h1>General Store Seller Dashboard</h1>
+    <form id="myform" class="container">
+        <label for="itemname" class="form-check-label">Item Name-></label>
+        <input type="text" value="" id="itemname">
+        <label for="description" class="form-check-label">Description-></label>
+        <input type="text" value="" id="description">
+        <label for="price" class="form-check-label"> Price-></label>
+        <input type="text" value="" id="price" pattern="[0-9]">
+        <label for="quantity" class="form-check-label">Quantity-></label>
+        <input type="text" value="" id="quantity" pattern="[0-9]">
+        <input type="button" value="SUBMIT" class="btn btn-success" id="submit">
+    </form>
+    <div id="resource">
+        <p>Bill of Materials</p>
+        <ul id="addHere">
+
+        </ul>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
